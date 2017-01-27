@@ -1,0 +1,23 @@
+{
+	"name": "Chrome Redirect",
+	"description": "Chrome Redirect",
+	"version": "0.0.0.1",
+	"manifest_version": 2,
+	"permissions": [
+		"webRequest",
+		"webNavigation",
+		"webRequestBlocking",
+		"tabs",
+		"<all_urls>"
+	],
+	"devtools_page": "dist/devtools.html",
+	"background": {
+		"scripts": [
+			"background_page.js"
+		],
+		"persistent": true
+	},
+	"web_accessible_resources": [
+		"storage/*"
+	]
+}
